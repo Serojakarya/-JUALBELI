@@ -1,0 +1,558 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script src="js/j.js" type="text/javascript">
+	</script><script src="js/s.js" type="text/javascript"></script>
+	  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />
+  <script src="js/jquery.js"></script>
+
+
+
+<style>
+
+#t {
+    text-align: justify;
+    line-height: 1.5;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #000 #000;
+    font-size: 16px;
+    background-color: #ffffff;
+    border-radius: 0px;
+	font-size: 17px;
+    padding: 8px 3px 8px 3px;
+    background-image: "gambar/paper.png"
+	font-family: "Trebuchet MS, Helvetica, sans-serif"
+}
+
+#t h1 {
+	position: fixed;
+	top: -1px;
+	right: 0px;
+	width: 100%;
+	padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 18px;
+	color: #F6B02E;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #F6B02E;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+
+#t h3 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 17px;
+	color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "arial"
+	
+}
+
+
+
+#t h2 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+#t h4 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+}
+
+.arab {
+    font-size: 25px!important;
+    line-height: 46px!important;
+    font-family: "Times New Roman", Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: right;
+    direction: rtl;
+}
+
+.my-wrapper {
+    padding-top: 30px;
+}
+
+.my-wrapper form {
+    position: fixed;
+    top: 0px;
+    left: 15px;
+    min-width: 95%;
+	padding-right: 25px;
+    z-index: 2;
+}
+
+.wrap {
+    white-space: normal !important;
+}
+
+p {
+    text-indent: 0%;
+}
+
+.c {
+    text-align: center;
+}
+
+.effect8 {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect8:before,
+.effect8:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+}
+
+.effect8:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+	max-width: 100%;
+	vertical-align: middle;
+	horizontal-align: left;
+	height: auto;
+	
+}
+
+
+.image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+	position:absolute;
+    top:0;
+    bottom:0;
+	left:5px;
+    margin:auto;
+}
+
+@media screen and (max-width: 640px) {
+    table {
+        overflow-x: auto;
+        display: block;
+	
+    }
+	
+	
+	td, th {
+  border: 1px solid #999;
+  padding: 0.3rem;
+}
+}
+
+
+
+
+.wrap2 {
+    white-space: normal !important;
+	text-align: right;
+}
+
+
+    pre {
+        font-family: "Courier 10 Pitch", Courier, monospace;
+        font-size: 95%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+		background: #f6f6f6;
+    }       
+    
+    code {
+        font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+        font-size: 85%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        background: #faf8f0;
+    }
+    
+    #content code {
+        display: block;
+        padding: 0.5em 1em;
+        border: 1px solid #bebab0;
+    }
+	
+	
+	phr {
+		color:#918e8f;
+		font-size:17px;
+		
+	}
+
+	pnt {
+		color:black;
+		font-size:14px;
+		font-style: italic;
+	}
+	
+	
+
+
+</style>
+
+<style>
+
+
+.bottom-nav {
+   
+    padding: 10px;
+    background-color: #0A3158;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+	margin-top: -20px;
+    margin-right: -20px;
+    margin-bottom: -5px;
+    margin-left: -20px;
+
+}
+
+.bottom-link-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.bottom-nav a {
+    color: #F6B02E;
+    cursor: pointer;
+}
+
+.bottom-nav a svg {
+    width: 20px;
+}
+
+.bottom-nav a:nth-child(3) {
+    transform: scale(1.5) translateY(-10px);
+    background-color: #0A3158;
+    border-radius: 1000px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #F6B02E;
+    color: #F6B02E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 760px) {
+    .bottom-nav {
+        width: 100%;
+        bottom: 0%;
+        left: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        -webkit-transform: translate(-50%,0%);
+           -moz-transform: translate(-50%,0%);
+            -ms-transform: translate(-50%,0%);
+             -o-transform: translate(-50%,0%);
+                transform: translate(-50%,0%);
+    }
+
+    .bottom-link-nav {
+        position: relative;
+        width: 450px;
+    }
+
+}
+</style>
+
+<style>
+    @font-face{;
+        font-family:"me_quran";
+        src:url("css/fonts/me_quran.ttf")
+    }
+    
+	 @font-face{;
+        font-family:"LPMQ_IsepMisbah";
+        src:url("LPMQ_IsepMisbah.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"Traditional Arabic";
+        src:url("font.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"KFGQPC Uthman Taha Naskh Bold";
+        src:url("fonts.ttf")
+    }
+	
+	
+    .arab{font-family:me_quran; }
+    </style> 
+<body>
+
+
+</head>
+
+<body>
+
+<div data-role="page" id="eps1" data-theme="d">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="c">
+		</div><div data-role="content"><div id="t">
+		
+
+
+
+<div id="mnj" style="display: block; position: right;">
+<ul id="tejaul">
+    <li><a href="1.html">1. Kitab Hukum Jual Beli</a></li>
+    <li><a href="2.html">2. Riba</a></li>
+    <li><a href="3.html">3. Khiyar (Pilihan)</a></li>
+	<li><a href="4.html">4. Salam (Pesan Barang)</a></li>
+	<li><a href="5.html">5. Gadai</a></li>
+	<li><a href="6.html">6. Hajr (Larangan Bertransaksi)</a></li>
+	<li><a href="7.html">7. Akad Shuluh (Perdamaian)</a></li>
+	<li><a href="8.html">8. Hiwalah (Pengalihan Hutang)</a></li>
+	<li><a href="9.html">9. Dhaman (Menjamin Hutang Orang lain)</a></li>
+	<li><a href="10.html">10. Kafalah (Doman dengan Selain Harta)</a></li>
+	<li><a href="11.html">11. Syirkah (Usaha Bersama)</a></li>
+	<li><a href="12.html">12. Wakalah (Perwakilan)</a></li>
+	<li><a href="13.html">13. Pengakuan (Iqrar)</a></li>
+	<li><a href="14.html">14. Ariyah (Pinjam Meminjam)</a></li>
+	<li><a href="15.html">15. Ghosab (Merampas Harta Orang lain)</a></li>
+	<li><a href="16.html">16. Syuf'ah (Usaha Bersama)</a></li>
+	<li><a href="17.html">17. Qiradh (Bisnis Bersama dengan Modal Salah Satu Pihak)</a></li>
+	<li><a href="18.html">18. Musaqah (Bagi Hasil Tanaman)</a></li>
+	<li><a href="19.html">19. Ijarah (Sewa)</a></li>
+	<li><a href="20.html">20. Jualah (Komisi / Upah Jasa)</a></li>
+	<li><a href="21.html">21. Hukum Mukhabarah (Bagi Hasil Tanaman )</a></li>
+	<li><a href="22.html">22. Ihyaul Mawat (Membuka Lahan)</a></li>
+	<li><a href="23.html">23. Hukum Wakaf (Waqaf)</a></li>
+	<li><a href="24.html">24. Hibah (Pemberian)</a></li>
+	<li><a href="25.html">25. Hukum Luqotoh (Barang Temuan)</a></li>
+	<li><a href="26.html">26. Hukum Laqit (Anak Terlantar)</a></li>
+	<li><a href="27.html">27. Hukum Wadiah (Titipan)</a></li>
+
+</ul>
+
+</div>
+
+
+<h1>BAB IJARAH <br/>(AKAD SEWA)
+</h1><br/><br/>
+
+
+<div align="center" class="style6"><font size="4" face="LPMQ_IsepMisbah"><b>فصل: في أحكام الإجارة
+</b></font></div>
+	
+
+<div align="center">
+	<hr size="2" width="100%" align="center"/>
+</div>
+
+
+<div align="justify" class="style6"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+
+
+
+
+وهي بكسر الهمزة في المشهور وحكى ضمها وهي لغة اسم للأجرة، وشرعاً عقد على منفعة معلومة مقصودة قابلة للبذل والإباحة بعوض معلوم، وشرط كل من المؤجر والمستأجر الرشد، وعدم الإكراه وخرج بمعلومة الجعالة وبمقصودة استئجار تفاحة لشمها، وبقابلة للبذل منفعة البضع فالعقد عليها لا يسمى إجارة، وبالإباحة إجارة الجواري للوطء، وبعوض الإعارة، وبمعلوم عوض المساقاة، ولا تصح الإجارة إلا بإيجاب كآجرتك، وقبول كاستأجرت، وذكر المصنف ضابط ما تصح إجارته بقوله
+<br/><br/>
+وكل ما أمكن الانتفاع به مع بقاء عينه- كاستئجار دار للسكنى ودابة للركوب (صحت إجارته) وإلا فلا ولصحة إجارة ما ذكر شروط ذكرها بقوله (إذا قدرت منفعته بأحد أمرين) إما (بمدة) كآجرتك هذه الدار سنة (أو عمل) كاستأجرتك لتخيط لي هذا الثوب، وتجب الأجرة في الإجارة بنفس العقد (وإطلاقها يقتضي تعجيل الأجرة إلا أن يشترط) فيها (التأجيل) فتكون الأجرة مؤجلة حينئذ
+<br/><br/>
+ولا تبطل- الإجارة (بموت أحد المتعاقدين) أي المؤجر والمستأجر، ولا بموت المتعاقدين، بل تبقى الإجارة بعد الموت إلى انقضاء مدتها، ويقوم وارث المستأجر مقامه في استيفاء منفعة العين المؤجرة
+<br/><br/>
+وتبطل- الإجارة (بتلف العين المستأجرة) كانهدام الدار وموت الدابة المعينة، وبطلان الإجارة بما ذكر بالنظر للمستقبل لا الماضي، فلا تبطل الإجارة فيه في الأظهر، بل يستقر قسطه من المسمى باعتبار أجرة المثل، فتقوّم المنفعة حال العقد في المدة الماضية، فإذا قيل كذا يؤخذ بتلك النسبة من المسمى، وما تقدم من عدم الانفساخ في الماضي مقيد بما بعد، قبض العين المؤجرة، وبعد مضي مدة لها أجرة، وإلا انفسخ في المستقبل والماضي، وخرج بالمعينة ما إذا كانت الدابة المؤجرة في الذمة، فإن المؤجر إذا أحضرها وماتت في أثناء المدة، فلا تنفسخ الإجارة بل يجب على المؤجر إبدالها.
+<br/><br/>
+واعلم أن يد الأجير على العين المؤجرة يد أمانة (و) حينئذ (لا ضمان على الأجير إلا بعدوان) فيها كأن ضرب الدابة فوق العادة أو أركبها شخصاً أثقل منه.
+
+</font></div>
+
+<hr/><br/>
+
+
+
+<b><center>Pengertian Ijarah</b></center>
+
+<p>(Fasal) menjelaskan hukum-hukum sewa.</p>
+
+<p>Lafadz “al ijarah” itu dengan dibaca kasrah huruf hamzahnya menurut pendapat yang masyhur. Dan ada yang menghikayahkan bahwa hamzahnya terbaca dlammah.</p>
+
+<p>Ijarah secara bahasa adalah nama sebuah ongkos.</p>
+
+<p>Dan secara syara’ adalah akad yang dilakukan pada manfaat yang sudah diketahui, yang maksud, dan menerima untuk diserahkan pada orang lain dan menerima untuk boleh digunakan dengan membanyar ganti / ongkos yang sudah diketahui.</p>
+
+<p>Syarat masing-masing dari orang yang menyewakan dan yang menyewa adalah rusyd (pintar) dan tidak ada paksaan.</p>
+
+<p>Dengan bahasa “manfaat yang sudah diketahui”, mengecualikan akad ju’alah (sayembara).</p>
+
+<p>Dengan keterangan “manfaat yang dituju”, mengecualikan menyewa buah apel karena untuk mencium baunya.</p>
+
+<p>Dengan keterangan “bisa menerima untuk diserahkan pada orang lain”, mengecualikan manfaat vagina, maka akad yang dilakukan pada manfaat vagina tidak disebut dengan ijarah.</p>
+
+<p>Dengan keterangan “menerima untuk boleh dimanfaatkan orang lain”, mengecualikan menyewakan budak-budak perempuan untuk dijima’.</p>
+
+<p>Dengan keterangan “dengan memberi ganti/ongkos”, mengecuali-kan akan pinjam.</p>
+
+<p>Dengan keterangan “ongkos yang sudah diketahui”, mengecualikan upah dari akad musaqah.</p>
+
+<p>Akad ijarah tidak sah kecuali dengan ijab (serah) seperti kata-kata “aku menyewakan padamu”, dan qabul (terima) seperti ucapan “aku menyewa”.</p><br/>
+
+<b><center>Barang Yang Disewakan</b></center>
+
+<p>Mushannif menyebutkan batasan barang yang sah untuk disewakan dengan perkataan beliau,</p>
+
+<p>Setiap sesuatu yang mungkin untuk dimanfaatkan tanpa mengurangi barangnya, seperti menyewa rumah untuk ditempati dan menyewa binatang untuk dinaiki, maka sah untuk diijarahkan / disewakan. Jika tidak, maka tidak sah.</p><br/>
+
+<b><center>Syarat Ijarah</b></center>
+
+<p>Sahnya menyewakan apa yang telah disebutkan di atas memiliki beberapa syarat yang dijelaskan oleh mushannif dengan perkataan beliau,</p>
+
+<p>Ketika manfaat barang tersebut dibatasi/dikira-kirakan dengan salah satu dari dua perkara,</p>
+
+<p>-yaitu- adakalanya dengan waktu seperti, “saya menyewakan rumah ini padamu selama setahun”.</p>
+
+<p>Atau dibatasi dengan pekerjaan seperti, “saya menyewamu untuk menjahit baju ini untukku.”</p><br/>
+
+<b><center>Ongkos Ijarah</b></center>
+
+<p>Ongkos di dalam akad ijarah telah menjadi tetap dengan akad itu sendiri -tidak harus menanti selesainya memanfaatkan barang yang disewakan-.</p>
+
+<p>Memutlakkan akad ijarah menetapkan pembayaran ongkos secara kontan.</p>
+
+<p>Kecuali jika di dalam akad ijarah tersebut disyaratkan pembayaran ongkos secara tempo, maka kalau demikian pembayaran ongkosnya ditempo.</p><br/>
+
+<b><center>Hukum Ijarah</b></center>
+
+<p>Akad ijarah tidak batal sebab kematian salah satu dari dua orang yang akad, maksudnya orang yang menyewakan dan yang menyewa.</p>
+
+<p>Dan tidak batal sebab kedua orang yang melakukan akad meninggal dunia. Bahkan akad ijarah tetap berlangsung setelah keduanya meninggal hingga masa akad tersebut habis.</p>
+
+<p>Dan ahli waris penyewa menggantikan posisinya untuk memanfaatkan barang yang disewanya.</p>
+
+<p>Akad ijarah menjadi batal sebab barang yang disewa dan telah ditentukan menjadi rusak seperti rumah yang disewa roboh, dan binatang tunggangan yang telah ditentukan mati.</p>
+
+<p>Batalnya akad ijarah sebab hal-hal yang telah dijelaskan tersebut memandang pada masa-masa setelah itu, tidak masa-masa yang telah lewat.</p>
+
+<p>Sehingga hukum akad ijarah pada masa-masa yang telah terlewati tidak batal menurut pendapat al adlhar, bahkan bagiannya dari ongkos yang telah disebutkan di awal menjadi tetap -hak orang yang menyewakan- dengan mempertimbangkan ongkos standar.</p>
+
+<p>Sehingga manfaat yang ada saat akad di kalkulasi berapa kira-kira yang telah digunakan di waktu-waktu yang sudah dilewati. ketika dikatakan kadarnya sekian, maka kadar tersebut diambil dari ongkos yang sudah disepakati sesuai dengan kalkulasi tersebut.</p>
+
+<p>Penjelasan di depan mengenai bahwa akad ijarah tidak rusak di masa-masa yang sudah lewat itu diqayyidi bahwa rusaknya tersebut setelah barang yang disewa telah diterima oleh pihak penyewa dan telah melewati masa yang layak untuk di beri ongkos.</p>
+
+<p>Jika tidak demikian, maka akad ijarah menjadi batal di masa-masa yang akan datang dan masa yang sudah lewat.</p>
+
+<p>Dengan keterangan “barang sewaan yang telah ditentukan”, mengecualikan permasalah ketika binatang tunggangan yang disewakan itu hanya disifati dalam tanggungan -tidak ditentukan yang mana-.</p>
+
+<p>Sehingga, ketika yang menyewakan telah mendatangkannya dan ternyata binatang tersebut mati di tengah-tengah masa akad sewa, maka akad ijarah tersebut tidak rusak, bahkan bagi yang menyewakan harus menggantinya.</p>
+
+<p>Ketahuilah sesungguhnya kekuasaan orang yang disewa terhadap barang yang disewakan adalah kekuasaan yang berupa amanah.</p>
+
+<p>Sehingga tidak ada kewajiban baginya untuk mengganti kecuali sebab keteledorannya pada barang tersebut, seperti ia memukul binatang tunggangan di atas ukuran yang biasa, atau menaikkan seseorang yang lebih berat dari pada dirinya di atas binatang tersebut. </p>
+</p>
+
+
+
+
+
+
+<br/>
+
+  <div class="bottom-nav">
+    <div class="bottom-link-nav"> 
+    <a href="../index.html">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+    </a>
+
+    <a href="18.html">
+	<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M18,11V13H10L13.5,16.5L12.08,17.92L6.16,12L12.08,6.08L13.5,7.5L10,11H18M2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12M4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12Z" /></svg>
+    </a>
+	
+    <a href="">
+    <font size="2" > 19</font>
+	</a>
+	
+	<a href="20.html">
+      <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M6,13V11H14L10.5,7.5L11.92,6.08L17.84,12L11.92,17.92L10.5,16.5L14,13H6M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" /></svg>
+    </a>
+	
+    <a href="#" id="tmnj">
+     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+    </a>
+	
+
+    </div>
+
+
+</body>
+</html>

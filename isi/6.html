@@ -1,0 +1,566 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script src="js/j.js" type="text/javascript">
+	</script><script src="js/s.js" type="text/javascript"></script>
+	  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />
+  <script src="js/jquery.js"></script>
+
+
+
+<style>
+
+#t {
+    text-align: justify;
+    line-height: 1.5;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #000 #000;
+    font-size: 16px;
+    background-color: #ffffff;
+    border-radius: 0px;
+	font-size: 17px;
+    padding: 8px 3px 8px 3px;
+    background-image: "gambar/paper.png"
+	font-family: "Trebuchet MS, Helvetica, sans-serif"
+}
+
+#t h1 {
+	position: fixed;
+	top: -1px;
+	right: 0px;
+	width: 100%;
+	padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 18px;
+	color: #F6B02E;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #F6B02E;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+
+#t h3 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 17px;
+	color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "arial"
+	
+}
+
+
+
+#t h2 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+#t h4 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+}
+
+.arab {
+    font-size: 25px!important;
+    line-height: 46px!important;
+    font-family: "Times New Roman", Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: right;
+    direction: rtl;
+}
+
+.my-wrapper {
+    padding-top: 30px;
+}
+
+.my-wrapper form {
+    position: fixed;
+    top: 0px;
+    left: 15px;
+    min-width: 95%;
+	padding-right: 25px;
+    z-index: 2;
+}
+
+.wrap {
+    white-space: normal !important;
+}
+
+p {
+    text-indent: 0%;
+}
+
+.c {
+    text-align: center;
+}
+
+.effect8 {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect8:before,
+.effect8:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+}
+
+.effect8:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+	max-width: 100%;
+	vertical-align: middle;
+	horizontal-align: left;
+	height: auto;
+	
+}
+
+
+.image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+	position:absolute;
+    top:0;
+    bottom:0;
+	left:5px;
+    margin:auto;
+}
+
+@media screen and (max-width: 640px) {
+    table {
+        overflow-x: auto;
+        display: block;
+	
+    }
+	
+	
+	td, th {
+  border: 1px solid #999;
+  padding: 0.3rem;
+}
+}
+
+
+
+
+.wrap2 {
+    white-space: normal !important;
+	text-align: right;
+}
+
+
+    pre {
+        font-family: "Courier 10 Pitch", Courier, monospace;
+        font-size: 95%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+		background: #f6f6f6;
+    }       
+    
+    code {
+        font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+        font-size: 85%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        background: #faf8f0;
+    }
+    
+    #content code {
+        display: block;
+        padding: 0.5em 1em;
+        border: 1px solid #bebab0;
+    }
+	
+	
+	phr {
+		color:#918e8f;
+		font-size:17px;
+		
+	}
+
+	pnt {
+		color:black;
+		font-size:14px;
+		font-style: italic;
+	}
+	
+	
+
+
+</style>
+
+<style>
+
+
+.bottom-nav {
+   
+    padding: 10px;
+    background-color: #0A3158;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+	margin-top: -20px;
+    margin-right: -20px;
+    margin-bottom: -5px;
+    margin-left: -20px;
+
+}
+
+.bottom-link-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.bottom-nav a {
+    color: #F6B02E;
+    cursor: pointer;
+}
+
+.bottom-nav a svg {
+    width: 20px;
+}
+
+.bottom-nav a:nth-child(3) {
+    transform: scale(1.5) translateY(-10px);
+    background-color: #0A3158;
+    border-radius: 1000px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #F6B02E;
+    color: #F6B02E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 760px) {
+    .bottom-nav {
+        width: 100%;
+        bottom: 0%;
+        left: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        -webkit-transform: translate(-50%,0%);
+           -moz-transform: translate(-50%,0%);
+            -ms-transform: translate(-50%,0%);
+             -o-transform: translate(-50%,0%);
+                transform: translate(-50%,0%);
+    }
+
+    .bottom-link-nav {
+        position: relative;
+        width: 450px;
+    }
+
+}
+</style>
+
+<style>
+    @font-face{;
+        font-family:"me_quran";
+        src:url("css/fonts/me_quran.ttf")
+    }
+    
+	 @font-face{;
+        font-family:"LPMQ_IsepMisbah";
+        src:url("LPMQ_IsepMisbah.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"Traditional Arabic";
+        src:url("font.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"KFGQPC Uthman Taha Naskh Bold";
+        src:url("fonts.ttf")
+    }
+	
+	
+    .arab{font-family:me_quran; }
+    </style> 
+<body>
+
+
+</head>
+
+<body>
+
+<div data-role="page" id="eps1" data-theme="d">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="c">
+		</div><div data-role="content"><div id="t">
+		
+
+
+
+<div id="mnj" style="display: block; position: right;">
+<ul id="tejaul">
+    <li><a href="1.html">1. Kitab Hukum Jual Beli</a></li>
+    <li><a href="2.html">2. Riba</a></li>
+    <li><a href="3.html">3. Khiyar (Pilihan)</a></li>
+	<li><a href="4.html">4. Salam (Pesan Barang)</a></li>
+	<li><a href="5.html">5. Gadai</a></li>
+	<li><a href="6.html">6. Hajr (Larangan Bertransaksi)</a></li>
+	<li><a href="7.html">7. Akad Shuluh (Perdamaian)</a></li>
+	<li><a href="8.html">8. Hiwalah (Pengalihan Hutang)</a></li>
+	<li><a href="9.html">9. Dhaman (Menjamin Hutang Orang lain)</a></li>
+	<li><a href="10.html">10. Kafalah (Doman dengan Selain Harta)</a></li>
+	<li><a href="11.html">11. Syirkah (Usaha Bersama)</a></li>
+	<li><a href="12.html">12. Wakalah (Perwakilan)</a></li>
+	<li><a href="13.html">13. Pengakuan (Iqrar)</a></li>
+	<li><a href="14.html">14. Ariyah (Pinjam Meminjam)</a></li>
+	<li><a href="15.html">15. Ghosab (Merampas Harta Orang lain)</a></li>
+	<li><a href="16.html">16. Syuf'ah (Usaha Bersama)</a></li>
+	<li><a href="17.html">17. Qiradh (Bisnis Bersama dengan Modal Salah Satu Pihak)</a></li>
+	<li><a href="18.html">18. Musaqah (Bagi Hasil Tanaman)</a></li>
+	<li><a href="19.html">19. Ijarah (Sewa)</a></li>
+	<li><a href="20.html">20. Jualah (Komisi / Upah Jasa)</a></li>
+	<li><a href="21.html">21. Hukum Mukhabarah (Bagi Hasil Tanaman )</a></li>
+	<li><a href="22.html">22. Ihyaul Mawat (Membuka Lahan)</a></li>
+	<li><a href="23.html">23. Hukum Wakaf (Waqaf)</a></li>
+	<li><a href="24.html">24. Hibah (Pemberian)</a></li>
+	<li><a href="25.html">25. Hukum Luqotoh (Barang Temuan)</a></li>
+	<li><a href="26.html">26. Hukum Laqit (Anak Terlantar)</a></li>
+	<li><a href="27.html">27. Hukum Wadiah (Titipan)</a></li>
+
+</ul>
+
+</div>
+
+
+<h1>BAB HAJR <br>(DICEGAH BERBISNIS)</h1><br/><br/>
+
+
+<div align="center" class="style6"><font size="4" face="LPMQ_IsepMisbah"><b>فصل: في حجر السفيه والمفلس
+
+</b></font></div>
+	
+
+<div align="center">
+	<hr size="2" width="100%" align="center"/>
+</div>
+
+
+<div align="justify" class="style6"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+
+
+
+
+
+والحجْر- لغةً المنع وشرعاً منع التصرف في المال بخلاف التصرف في غيره كالطلاق فينفذ من السفيه، وجعل المصنف الحجر (على ستة) من الأشخاص
+<br/><br/>
+الصبي والمجنون والسفيه- وفسره المصنف بقوله (المبذر لماله) أي يصرفه في غير مصارفه
+<br/><br/>
+والمفلس- وهو لغة من صار ماله فلوساً، ثم كنى به عن قلة المال أو عدمه وشرعاً الشخص (الذي ارتكبته الديون) ولا يفي ماله بدينه أو ديونه.
+<br/><br/>
+والمريض- المخوف عليه من مرضه والحجر عليه (فيما زاد على الثلث) وهو ثلثا التركة لأجل حق الورثة هذا إن لم يكن على المريض دين، فإن كان عليه دين يستغرق تركته حجر عليه في الثلث وما زاد عليه (والعبد الذي لم يؤذن له في التجارة) فلا يصح تصرفه بغير إذن سيده، وسكت المصنف عن أشياء من الحجر مذكورة في المطولات منها الحجر على المرتد لحق المسلمين،
+<br/><br/>
+ومنها الحجر على الراهن لحق المرتهن (وتصرف الصبي والمجنون والسفيه غير صحيح). فلا يصح منهم بيع ولا شراء ولا هبة ولا غيرها من التصرفات، وأما السفيه فيصح نكاحه بإذن وليه (وتصرف المفلس يصح في ذمته) فلو باع سلماً طعاماً أو غيره أو اشترى كلاًّ منهما بثمن في ذمته صح (دون) تصرفه في (أعيان ماله) فلا يصح وتصرفه في نكاح مثلاً أو طلاق أو خلع صحيح، وأما المرأة المفلسة فإن اختلعت على عين لم يصح أو دين في ذمتها صح (وتصرف المريض فيما زاد على الثلث موقوف على إجازة الورثة) فإن أجازوا الزائد على الثلث صح وإلا فلا،
+<br/><br/>
+وإجازة الورثة وردهم حال المرض لا يعتبران، وإنما يعتبر ذلك (من بعده) أي من بعد موت المريض، وإذا أجاز الوارث ثم قال إنما أجزت لظني أن المال قليل، وقد بان خلافه صدق بيمينه (وتصرف العبد) الذي لم يؤذن له في التجارة (يكون في ذمته) ومعنى كونه في ذمته أنه (يتبع به بعد عتقه) إذا اعتق فإن أذن له السيد في التجارة صح تصرفه بحسب ذلك الإذن.
+
+</font></div>
+
+<hr/><br/>
+
+
+
+<b><center>Pengertian Hajr (Larangan Berbisnis)</b></center>
+
+<p>(Fasal) menjelaskan hajr terhadap safih (orang idiot) dan muflis (orang yang pailit).</p>
+
+<p>Hajr secara bahasa bermakna mencegah. Dan secara syara’ adalah mencegah tasharruf (berbisnis, bertransaksi) di dalam harta.</p>
+
+<p>Berbeda dengan tasharruf pada selain harta seperti talak, maka talak yang dilakukan oleh safih hukumnya sah.</p></br/>
+
+<b><center>Pembagian Orang-Orang Yang di Hajr</b></center>
+
+<p>Mushannif menjadikan hajr pada enam orang.</p>
+
+<p>Yaitu anak kecil, orang gila, safih (idiot), dan mushannif menjelaskan safih dengan perkataan beliau, yang menyia-nyiakan hartanya, maksudnya safih yang tidak bisa mentasharrufkan harta sesuai dengan semestinya.</p>
+
+<p>-Ke empat- dan muflis (orang yang pailit). Muflis secara bahasa adalah orang yang hartanya telah menjadi uang receh, kemudian kata-kata ini dijadikan sebagai kinayah yang menunjukkan sedikitnya harta atau tidak memiliki harta.</p>
+
+<p>Dan secara syara’ adalah orang yang memiliki beban hutang dan hartanya tidak cukup untuk melunasi satu hutang atau beberapa hutang-hutangnya.</p>
+
+<p>-yang ke lima- dan orang sakit yang telah mengkhawatirkan -meninggal dunia-.</p>
+
+<p>Orang sakit seperti ini dihajr pada harta yang lebih dari sepertiga seluruh hartanya, yaitu dua sepertiga harta tinggalannya karena untuk menjaga hak ahli waris.</p>
+
+<p>Hukum ini jika memang dia tidak memiliki tanggungan hutang.</p>
+
+<p>Jika dia memiliki tanggungan hutang yang bisa menghabiskan seluruh harta peninggalannya, maka ia dihajr pada sepertiga hartanya dan selebihnya.</p>
+
+<p>-ke enam- dan budak yang tidak diberi izin untuk berdagang.</p>
+
+<p>Sehingga tasharrufnya tidak sah tanpa seizin majikannya.</p>
+
+<p>Mushannif tidak menjelaskan tentang beberapa permasalah hajr yang dijelaskan di dalam kitab-kitab yang diperluas pembahasannya.</p>
+
+<p>Di antaranya adalah masalah hajr terhadap orang murtad karena untuk menjaga hak orang-orang islam. Dan sebagiannya lagi adalah masalah hajr terhadap rahin karena menjaga hak murtahin.</p></br/>
+
+<b><center>Tasharruf Orang-Orang Yang di Hajr</b></center>
+
+<p>Tasharruf anak kecil, orang gila dan safih hukumnya tidak sah.</p>
+
+<p>Sehingga tidak sah jual beli, hibbah dan tasyaruf-tasyaruf lainnya yang dilakukan oleh mereka.</p>
+
+<p>Adapun safih, maka nikah yang ia lakukan hukumnya sah dengan izin walinya.</p>
+
+<p>Tasharruf muflis hukumnya sah jika dibebankan pada tanggungannya.</p>
+
+<p>Sehingga, seandainya ia menjual makanan atau yang lain dengan akad salam, atau membeli keduanya dengan bayaran yang berada pada tanggungannya (hutang), maka hukumnya sah.</p>
+
+<p>Tidak tasharruf yang ia lakukan pada ‘ainiyah hartanya, maka hukumnya tidak sah.</p>
+
+<p>Tasharrufnya semisal di dalam nikah, cerai, atau khulu’ hukumnya sah.</p>
+
+<p>Adapun wanita yang muflis, maka jika ia melakukan khulu’ dengan ‘ainiyah hartanya, maka hukumnya tidak sah. Atau dengan hutang yang menjadi tanggungannya, maka hukumnya sah.</p>
+
+<p>Tasharruf yang dilakukan oleh orang yang sakit -yang telah mengkhawatirkan- pada hartanya yang melebihi sepertiga dari seluruh harta tinggalannya tergantung pada persetujuan ahli waris.</p>
+
+<p>Jika mereka menyetujui harta yang melebihi dari sepertiga, maka hukumnya sah. Namun jika tidak setuju, maka hukumnya tidak sah.</p>
+
+<p>Izin dan penolakkan ahli waris saat orang yang sakit masih ada -belum meninggal- tidak dianggap.</p>
+
+<p>Izin dan penolakkan itu hanya dianggap setelahnya, maksudnya setelah yang sakit tersebut meninggal dunia.</p>
+
+<p>Ketika ahli waris setuju, namun kemudian ia berkata, “aku setuju itu tidak lain karena aku menyangka bahwa harta tersebut sedikit, namun ternyata tidak demikian.”, maka ia dibenarkan dengan disertai sumpahnya.</p>
+
+<p>Tasharruf yang dilakukan oleh seorang budak yang tidak diberi izin untuk berdagang, maka semuanya berada pada tanggungannya.</p>
+
+<p>Yang dimaksud dengan berada pada tanggungannya adalah semua tasharruf tersebut akan mengikut pada budak itu setelah ia merdeka ketika memang merdeka.<sup>1</sup></p>
+
+Sehingga, jika sang majikan memberi izin untuk berdagang, maka tasharruf budak itu sah sebab mempertimbangkan izin tersebut.</p>
+</p>
+
+
+
+
+<b><u>Catatan:</u></b><br/>
+<phr>
+<p><sub>1</sub>Keharusan bertanggung jawab ini bila memang benda yang didapatkannya dari orang lain telah tiada atau rusak
+ditangannya. Ia harus menganti rugi benda tersebut setelah ia merdeka nantinya. Karena pada saat ia masih
+berstatus budak ia tidak bisa memiliki apapun sehingga kwajiban mengganti rugi menunggu hingga ia merdeka.
+Jika memang barangnya masih ada maka ia harus mengembalikan kepada pemilik barang atau pemilik barang
+yang mengambilnya. Dan jika rusaknya barang di tangan sayyid maka pemilik barang boleh meminta ganti kepada
+sayyid atau juga kepada kepada si budak. Hal ini karena tasaruf budak tersebut tidak sah sama sekali. Lihat AlBaijuri, (Dar al-Kutub al-Ilmiyah, Beirut Lebanon, 1999) juz 1 hal. 709.</p>
+
+
+</phr>
+
+
+
+
+
+
+<br/>
+
+  <div class="bottom-nav">
+    <div class="bottom-link-nav"> 
+    <a href="../index.html">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+    </a>
+
+    <a href="5.html">
+	<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M18,11V13H10L13.5,16.5L12.08,17.92L6.16,12L12.08,6.08L13.5,7.5L10,11H18M2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12M4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12Z" /></svg>
+    </a>
+	
+    <a href="">
+    <font size="2" > 6</font>
+	</a>
+	
+	<a href="7.html">
+      <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M6,13V11H14L10.5,7.5L11.92,6.08L17.84,12L11.92,17.92L10.5,16.5L14,13H6M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" /></svg>
+    </a>
+	
+    <a href="#" id="tmnj">
+     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+    </a>
+	
+
+    </div>
+
+
+</body>
+</html>
